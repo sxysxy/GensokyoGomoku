@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GensokyoGomokuClass</class>
+ <widget class="QMainWindow" name="GensokyoGomokuClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>GensokyoGomoku</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>游戏</string>
+    </property>
+    <widget class="QMenu" name="menuOfflineGame">
+     <property name="title">
+      <string>单机开局</string>
+     </property>
+     <widget class="QMenu" name="menu_6">
+      <property name="title">
+       <string>人机对战</string>
+      </property>
+      <addaction name="actionPVCFH"/>
+      <addaction name="actionPVCAH"/>
+     </widget>
+     <addaction name="actionPVP"/>
+     <addaction name="menu_6"/>
+    </widget>
+    <widget class="QMenu" name="menuTerminate">
+     <property name="title">
+      <string>结束本局</string>
+     </property>
+     <addaction name="actionTerminate"/>
+     <addaction name="actionYield"/>
+    </widget>
+    <widget class="QMenu" name="menuOnlineGame">
+     <property name="title">
+      <string>联机开局</string>
+     </property>
+     <addaction name="actionCreateGame"/>
+     <addaction name="actionJoinGame"/>
+    </widget>
+    <addaction name="menuOfflineGame"/>
+    <addaction name="menuOnlineGame"/>
+    <addaction name="actionReplay"/>
+    <addaction name="separator"/>
+    <addaction name="menuTerminate"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuSetLevel">
+    <property name="title">
+     <string>人机难度</string>
+    </property>
+    <addaction name="actionVeryEasy"/>
+    <addaction name="actionEasy"/>
+    <addaction name="actionNormal"/>
+    <addaction name="actionHard"/>
+    <addaction name="actionLunatic"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuSetLevel"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="actionTerminate">
+   <property name="text">
+    <string>结束</string>
+   </property>
+  </action>
+  <action name="actionPVP">
+   <property name="text">
+    <string>人人对战</string>
+   </property>
+  </action>
+  <action name="actionCreateGame">
+   <property name="text">
+    <string>创建游戏</string>
+   </property>
+  </action>
+  <action name="actionJoinGame">
+   <property name="text">
+    <string>加入游戏</string>
+   </property>
+  </action>
+  <action name="actionYield">
+   <property name="text">
+    <string>认输</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出游戏</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于作者</string>
+   </property>
+  </action>
+  <action name="actionBotZone_Score">
+   <property name="text">
+    <string>BotZone成绩</string>
+   </property>
+  </action>
+  <action name="actionPVCFH">
+   <property name="text">
+    <string>人先手</string>
+   </property>
+  </action>
+  <action name="actionPVCAH">
+   <property name="text">
+    <string>人后手</string>
+   </property>
+  </action>
+  <action name="actionVeryEasy">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>无难度</string>
+   </property>
+  </action>
+  <action name="actionEasy">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>简单</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>一般</string>
+   </property>
+  </action>
+  <action name="actionHard">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>困难</string>
+   </property>
+  </action>
+  <action name="actionLunatic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>大师</string>
+   </property>
+  </action>
+  <action name="actionReplay">
+   <property name="text">
+    <string>对局回放</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
